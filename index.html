@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong - Jogo Completo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #222;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+        #placar {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 2px solid white;
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placar do Jogo -->
+    <div id="placar">
+        <span id="scoreEsquerda">0</span> - <span id="scoreDireita">0</span>
+    </div>
+
+    <!-- Canvas do WebGL -->
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <!-- Scripts -->
+    <script src="m3.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
